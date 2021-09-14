@@ -1,13 +1,102 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500;600&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: rgb(233, 223, 236);
+  width: 100%;
+  height: 100vh;
+  font-family: 'Karla';
+  font-size: 10px;
+}
+.main-container{
+    margin: 0 auto;
+    max-width:1000px;
+    padding: 40px;
+}
+.title{
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+  
+}
+.form{
+  display: grid;
+ 
+}
+label{
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+}
+.form--movie-name-input{
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+button{
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  padding: .6rem;
+  border: 1px solid rgba(0,0,0,0.75);
+  border-radius: 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+button:hover {
+  background-color: rgba(0,0,0,0.85);
+}
+.card {
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+  margin-bottom: 2rem;
+  background-color: white;
+  font-size: 1.1rem;
+}
+.card-list {
+  margin-top: 4rem;
+}
+.card--title {
+  margin-bottom: 0.5rem;
+  font-size: 2.8rem;
+}
+.card--image {
+  margin: 0 auto;
+  display: block;
+}
+input:focus{
+  outline: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (min-width:786px){
+  .form {
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1rem;
+    align-items: baseline;
+  }
+  .form--movie-name-input{
+    padding: 1.25rem 2rem;
+  }
+  button{
+    padding: 1.25rem 1.7rem;
+  }
+  .input {
+      margin-bottom: 0;
+  }
+  .card{
+    display: flex;
+  }
+  .card--image{
+    margin-right: 50px;
+    max-height: 300px;
+    align-self: center;
+  }
 }
