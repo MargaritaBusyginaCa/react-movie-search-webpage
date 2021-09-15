@@ -33,7 +33,7 @@ export default function MovieSearch() {
 
   return (
     <div className="main-container">
-      <h2 className="title">React Moview Search</h2>
+      <h2 className="title">React Movie Search</h2>
 
       <form className="form" onSubmit={searchMovies}>
         <label className="form--label" htmlFor="query">
