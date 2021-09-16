@@ -2,7 +2,7 @@
 Moview Search website built with React js
 
 ### Link
-You can test it at https://vibrant-jennings-613df2.netlify.app/
+You can test it at https://dazzling-snyder-bf9b52.netlify.app/
 
 
 ### Screenshot
