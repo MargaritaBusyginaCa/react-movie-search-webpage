@@ -7,7 +7,7 @@ You can test it at https://vibrant-jennings-613df2.netlify.app/
 
 ### Screenshot
 
-![](./Capture1.PNG)
+![](./screenshot-birdbox.PNG)
 
 
 
